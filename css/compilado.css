@@ -1,1 +1,58 @@
-/* Origen*/
+@charset "UTF-8";
+/*reset*/
+* {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Variables*/
+/*tamaño de fuentes*/
+/*Colores de la pagina*/
+/*Fuentes*/
+/*Color de fuente*/
+/*$font-color-h1:
+$font-color-h1:*/
+/*variables sombras*/
+/*Estilos Generales*/
+html {
+  font-size: 62.5%;
+  /*tamaño de fuente 1rem=10px*/ }
+
+body {
+  text-align: center; }
+
+main {
+  background-color: #e5e5f7;
+  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px; }
+
+/*Estilos del Header*/
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto auto;
+  background-color: #9098DA;
+  align-items: center; }
+  .header__logo {
+    grid-area: 1/1/2/2; }
+    .header__logo img {
+      width: 85px; }
+  .header__nombre h1 {
+    color: #c30808;
+    font-family: "Aclonica", sans-serif;
+    font-size: 7rem;
+    font-style: normal;
+    text-shadow: 3px 0px 0px #090808, 11px -4px 19px #06dbee; }
+  .header__nombre h2 {
+    color: #ffffff;
+    font-family: "Euphoria Script", cursive;
+    font-size: 6rem;
+    font-style: italic;
+    margin-top: -20px;
+    line-height: 0.8rem;
+    text-shadow: -3px 0px 0px #191010; }
+  .header__user {
+    display: flex; }
+
+/*condicionales*/

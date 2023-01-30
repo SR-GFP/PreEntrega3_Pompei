@@ -1,0 +1,30 @@
+@import "./mixin";
+/*Estilos del Header*/
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto auto;    
+    background-color: $color-1;
+    align-items: center;
+    &__logo {
+        grid-area: 1/1/2/2;
+        & img{
+            width: 85px;
+        }
+    }
+    &__nombre {
+        & h1{
+        @include prop_nombre($font-color-h1, $font-h1, $size-h1, normal);        
+        text-shadow: $sombra-h1;
+        }
+        & h2{
+        @include prop_nombre($font-color-h2, $font-h2, $size-h2,italic);
+        margin-top: -20px;
+        line-height: 0.8rem;
+        text-shadow: $sombra-h2;
+    }
+    }
+    &__user{
+        display: flex;
+    }
+}

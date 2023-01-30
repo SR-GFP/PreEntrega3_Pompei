@@ -1,0 +1,14 @@
+@mixin disp-dir-alig($display, $direccion, $alineado){
+    display: $display;
+    flex-direction: $direccion;
+    justify-content: $alineado;
+    align-items: $alineado;
+}
+
+@mixin prop_nombre($color, $font, $size, $style){
+    color:$color;
+    font-family: $font;
+    font-size: $size;
+    font-style: $style;
+}
+
