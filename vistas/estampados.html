@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Enlace para estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- libreria para animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalaka Calcos y Estampados</title>
+    <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:wght@500&family=Righteous&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <!-- Inicio HEADER -->
+    <header class="header">
+        <div class="header__logo flex_center">
+            <img src="../media/logo.png" alt="" class="header__efecto--logo">
+        </div>
+
+        <div class="header__titulo flex_center">
+                <h1>KALAKA</h1>
+                <h2>Calcos y Estampados</h2>
+        </div>
+        
+        <div class="header__user flex_center">
+            <div class="header__user__usuario">
+                <button class="button" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">                
+                    <img src="../media/cuenta.png" alt="">
+                </button>
+            </div>
+            <!-- Ventana Emergente Log in User creada a partir de un modal de bootstrap se modifican los label y los input-->            
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Usuario o Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword">
+                            </div>
+                            <div class="modal-footer">
+                                <a href="../index.html">
+                                    <button type="button" class="btn btn-primary">Ingresar</button>                            
+                                </a>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- menu desplegable responsive creada por mi(busque ayuda en youtube) con html y css -->
+            <div class="contenedor__menu">
+                <input type="checkbox" name="" id="check" class="check">
+                <label for="check" class="menu">
+                    <span class="menu__abrir" >&#09776</span>
+                    <span class="menu__cerrar">X</span>                    
+                </label>
+                <nav class="nav__menu">
+                    <ul >
+                        <li class="menu__nav__li"><a href="../index.html">Home</a></li>
+                        <li class="menu__nav__li"><a href="./calcos.html">Calcos</a></li>
+                        <li class="menu__nav__li"><a href="./impresiones.html">Impresiones</a></li>
+                        <li class="menu__nav__li menu__nav--active"><a href="./estampados.html">Estampados</a></li>
+                        <li class="menu__nav__li"><a href="./contacto.html">Contacto</a></li>                        
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="header__user__carrito">
+                <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#paginaEnConstruccion">
+                    <img src="../media/carritoDeCompras.png" alt="">
+                </button>                
+                <!-- Ventana Emergente de mensaje creada a partir de un modal de bootstrap se modifican input y label-->    
+                <div class="modal fade" id="paginaEnConstruccion" tabindex="-1" aria-labelledby="paginaEnConstruccionLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="paginaEnConstruccionLabel">upps!</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Pagina en construccion! Te pedimos disculpas, hasta no hacer el curso de JS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+        </div>
+        <!-- Barra de Navegacion -->
+        <nav class="header__nav flex_center">
+            <ul data-aos="fade-right" data-aos-duration="1200">
+                <li class="header__nav__li"><a href="../index.html">Home</a></li>
+                <li class="header__nav__li"><a href="./calcos.html">Calcos</a></li>
+                <li class="header__nav__li"><a href="./impresiones.html">Impresiones</a></li>
+                <li class="header__nav__li header__nav--active"><a href="./estampados.html">Estampados</a></li>
+                <li class="header__nav__li"><a href="./contacto.html">Contacto</a></li>
+                <li class="header__nav--input">
+                    <input classtype="text" name="buscador" id="buscador" placeholder="¿que estas buscando?">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- inicio del main -->
+    <main class="main__estampados fondo">
+        <section class="Sublimacion">
+            <div class="padding__main">
+                <h3>Sublimacion</h3>            
+                <p>La sublimación digital textil es un proceso que consiste en transferir un diseño a una tela a través de la aplicación 
+                    De esta manera los colores se ven mucho más vívos, y el diseño resiste a los lavados por mucho más tiempo.
+                    Este proceso permite transferir cualquier tipo de diseño con alta fidelidad, sin límites de colores, dado que se trata de una impresión digital. Y al no La calidad del producto final depende de varios factores: la correcta calibración del plotter de impresión digital, la calidad de los insumos (tinta y papel), el tipo de tela a sublimar y el comportamiento de la plancha o calandra de sublimación.
+                    de presión y calor. Para ello se utilizan tintas especiales de alta tecnología que, al gasificarse sin pasar por el estado líquido, penetran de una manera mucho más eficiente y permanente en la tela a estampar.
+                    Poseemos equipos de ultima generación con una capacidad de producción de 2000 mts diarios.
+                </p>
+            </div>            
+            <div class="galeria">
+                <img class="img" src="../media/sublimados1.png" alt="Plotter Sublimacion">
+                <img class="img" src="../media/sublimados2.png" alt="Articulos Sublimados">
+                <img class="img" src="../media/sublimados3.png" alt="">
+            </div>
+            <hr class="separador" data-aos="fade-right" data-aos-duration="1200">
+        </section>
+
+        <section class="dtg">
+            <div class="padding__main">
+                <h3>DTG</h3>
+                <h4>Impresión directa, de alto rendimiento y confiable</h4>
+                <p>
+                    Impresión directa a la prenda (DTG ó Direct to Garment). Ofrece un sistema diseñado completamente para impresiones de alta calidad a velocidades de producción.
+                    La Capacidad de producir digitalmente prendas impresas con la más variada gama cromática permite disfrutar de una calidad de impresión inigualable, logrando colores plenos y degradados como ningún otro sistema.
+                    Imprima sobre múltiples tipos de prendas claras y oscuras, sobre este ultimo tipo de prenda con una base blanca genera una impresión extraordinaria.
+                    Con un sistema de desgasificación permite que la estampa sobre la tela no sea rígida y tenga una flexibilidad optima, a su vez las tintas utilizadas cumple con todas las normas y certificados  para ropa infantil y en general.
+                </p>
+            </div>            
+            <div class="galeria">
+                <img class="img" src="../media/dtg.png" alt="">
+                <img class="img" src="../media/dtg1.png" alt="">
+                <img class="img" src="../media/dtg2.png" alt="">
+            </div>
+                <hr class="separador" data-aos="fade-right" data-aos-duration="1200">
+        </section>
+        
+    </main>
+    
+    <!-- Inicio del Footer -->
+    <footer class="footer">
+        <section class="footer__datos">
+            <div class="footer__datos__iconos">
+                <img src="../media/footer1.png" alt="">                
+                <p>kalaka.calcos@gmail.com</p>
+            </div>
+            <div class="footer__datos__iconos">
+                <img src="../media/footer2.png" alt="">
+                <p>Tel: 4310-XXXX</p>
+            </div>
+            <div class="footer__datos__iconos">
+                <img src="../media/footer3.png" alt="">
+                <p>Av. Pichincha xxxxx C.A.B.A</p>
+            </div>
+        </section>
+        <section class="footer__redes">
+            <h3>Sigamos Conectados</h3>
+            <div>
+                <a href="">
+                    <img src="../media/redes1.png" alt="">
+                </a>                
+            </div>
+            <div>
+                <a href="">
+                    <img src="../media/redes2.png" alt="">
+                </a>                
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">        
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">            
+    </script>
+</body>
+</html>
