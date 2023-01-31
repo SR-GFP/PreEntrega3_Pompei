@@ -27,7 +27,12 @@ html {
 body {
   text-align: center; }
 
-/*condicionales*/
+.separador {
+  width: 50%;
+  height: 1rem;
+  background-color: fuchsia;
+  margin: 2rem 0rem; }
+
 /*Variables*/
 /*tamaño de fuentes*/
 /*Colores de la pagina*/
@@ -151,6 +156,15 @@ body {
     padding-bottom: 10rem;
     margin: 0% 10%;
     padding: 2%; }
+  .main__galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .main__galeria img {
+      width: auto;
+      height: auto;
+      border-radius: 2rem;
+      margin: 1rem 2rem; }
   .main__servicios {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -270,13 +284,15 @@ body {
     column-gap: 2rem;
     row-gap: 0rem;
     align-items: center; }
-  .main__barra img {
-    width: 100px; }
   .main__barra__columnas {
     flex-direction: column;
     width: 49.99999%;
     margin: 10px 0px;
-    justify-content: center; } }
+    justify-content: center; }
+    .main__barra__columnas img {
+      width: 70%; }
+  .main__galeria img {
+    width: 70%; } }
 
 @media screen and (max-width: 480px) {
   .header__nombre h1 {

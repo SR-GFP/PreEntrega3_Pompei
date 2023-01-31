@@ -35,15 +35,18 @@
         .main{
             &__servicios{
                 @include grid(grid, 1, 6, 2rem, 0rem, center);
-            }
-            &__barra img{
-                width: 100px;
-            }        
+            }            
             &__barra__columnas{
                 flex-direction: column;
                 width: 49.99999%;
                 margin: 10px 0px;
                 justify-content: center;
+                & img{
+                    width: 70%;
+                }
+            }
+            &__galeria img{
+                width: 70%;
             }
         }
     }
