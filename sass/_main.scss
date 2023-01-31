@@ -65,7 +65,7 @@
             @include prop_text ($font-color-h2, $font-p, $size-p, normal);            
         }
         & img {
-            @include prop_img(200px, auto, none);
+            @include prop_img(150px, auto, none);
             margin: 1rem;
         }
         &__columnas{
