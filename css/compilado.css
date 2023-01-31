@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/*Variables*/
+/*tamaño de fuentes*/
+/*Colores de la pagina*/
+/*Fuentes*/
+/*Color de fuente*/
+/*variables sombras*/
+/*Gadiente*/
 /*reset*/
 * {
   margin: o;
@@ -10,8 +17,6 @@
 /*Colores de la pagina*/
 /*Fuentes*/
 /*Color de fuente*/
-/*$font-color-h1:
-$font-color-h1:*/
 /*variables sombras*/
 /*Gadiente*/
 /*Estilos Generales*/
@@ -22,12 +27,24 @@ html {
 body {
   text-align: center; }
 
-main {
-  background-color: #e5e5f7;
-  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-  background-size: 20px 20px;
-  background-position: 0 0,10px 10px; }
+.main {
+  padding: 2% 10%; }
 
+/*condicionales*/
+/*Variables*/
+/*tamaño de fuentes*/
+/*Colores de la pagina*/
+/*Fuentes*/
+/*Color de fuente*/
+/*variables sombras*/
+/*Gadiente*/
+/*Variables*/
+/*tamaño de fuentes*/
+/*Colores de la pagina*/
+/*Fuentes*/
+/*Color de fuente*/
+/*variables sombras*/
+/*Gadiente*/
 /*Estilos del Header*/
 .header {
   display: grid;
@@ -38,7 +55,9 @@ main {
   .header__logo {
     grid-area: 1/1/2/2; }
     .header__logo img {
-      width: 85px; }
+      width: 85px;
+      height: auto;
+      border-radius: 0px; }
   .header__nombre h1 {
     color: #c30808;
     font-family: "Aclonica", sans-serif;
@@ -57,11 +76,22 @@ main {
     display: flex;
     justify-content: space-around; }
     .header__user img {
-      width: 65px;
-      border: none; }
-    .header__user button {
+      width: 70px;
+      height: auto;
+      border-radius: 0px; }
+    .header__user__btn {
       border: none;
       background: none; }
+    .header__user__btn-primario {
+      color: #00ebff;
+      font-family: "Euphoria Script", cursive;
+      font-size: 2rem;
+      font-style: italic;
+      background-color: #5a5454e3;
+      border-radius: 20px; }
+      .header__user__btn-primario:hover {
+        background-color: #00ebff;
+        color: #5a5454e3; }
   .header__nav {
     grid-area: 2/1/3/4;
     background-color: black;
@@ -73,7 +103,7 @@ main {
     .header__nav__a {
       color: #ffffff;
       font-family: "Righteous", cursive;
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-style: normal; }
       .header__nav__a:hover {
         color: #ffffff;
@@ -94,4 +124,40 @@ main {
       text-shadow: -3px 0px 0px #191010;
       color: #00ebff; }
 
-/*condicionales*/
+/*Estilos Main*/
+.main {
+  background-color: #e5e5f7;
+  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px;
+  padding-bottom: 10px; }
+  .main h3 {
+    color: black;
+    font-family: black;
+    font-size: 4rem;
+    font-style: italic; }
+  .main p {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: normal; }
+  .main h4 {
+    color: black;
+    font-family: "Righteous", cursive;
+    font-size: 2.5rem;
+    font-style: normal;
+    text-decoration: underline; }
+  .main__presentacion {
+    padding-bottom: 10rem; }
+  .main__servicios {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 3rem;
+    row-gap: 2rem;
+    align-items: center; }
+    .main__servicios img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px; }

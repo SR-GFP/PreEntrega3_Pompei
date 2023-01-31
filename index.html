@@ -31,7 +31,7 @@
         
         <div class="header__user">
             <div class="header__user__usuario">
-                <button class="button" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">                
+                <button class="button header__user__btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">                
                     <img src="./media/cuenta.png" alt="">
                 </button>
             </div>
@@ -41,7 +41,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-cierre" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="mb-3">
@@ -52,9 +52,9 @@
                                 <label for="inputPassword" class="form-label">Password</label>
                                 <input type="password" class="form-control" id="inputPassword">
                             </div>
-                            <div class="modal-footer">
+                            <div class="">
                                 <a href="./index.html">
-                                    <button type="button" class="btn btn-primary">Ingresar</button>                            
+                                    <button type="button" class="btn btn-primary header__user__btn-primario">Ingresar</button>                            
                                 </a>                            
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="header__user__carrito">
-                <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#paginaEnConstruccion">
+                <button type="button" class="button header__user__btn" data-bs-toggle="modal" data-bs-target="#paginaEnConstruccion">
                     <img src="./media/carritoDeCompras.png" alt="">
                 </button>                
                 <!-- Ventana Emergente de mensaje creada a partir de un modal de bootstrap se modifican input y label-->    
@@ -107,28 +107,25 @@
             <div class="row">
             </div>
         </nav>
-    </header> 
+    </header>        
         
-        <!-- Barra de Navegacion
-        <nav class="header__nav flex_center">
-            <ul data-aos="fade-right" data-aos-duration="1200">
-                <li class="header__nav__li header__nav--active"><a href="">Home</a></li>
-                <li class="header__nav__li"><a href="./vistas/calcos.html">Calcos</a></li>
-                <li class="header__nav__li"><a href="./vistas/impresiones.html">Impresiones</a></li>
-                <li class="header__nav__li"><a href="./vistas/estampados.html">Estampados</a></li>
-                <li class="header__nav__li"><a href="./vistas/contacto.html">Contacto</a></li>
-                <li class="header__nav--input">
-                    <input classtype="text" name="buscador" id="buscador" placeholder="¿que estas buscando?">
-                </li>
-            </ul>
-        </nav> -->
 
     <!-- inicio del main -->
     
     <main class="main">                       
-        <section class="padding__main">
+        <section class="main__presentacion padding__main">
             <h3>Kalaka Calcos y Estampados</h3>            
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident temporibus recusandae illo repellendus, sed maiores excepturi animi facere dolorem libero unde tempore iusto non. Quae voluptates quod, cupiditate hic, blanditiis velit provident placeat vel, voluptatum inventore in excepturi deserunt sunt.</p>        
+            <p>Somos un grupo de innovadores con los estándares más
+                altos, usamos tecnología avanzada para elevar la calidad de
+                la industria.
+                Trabajamos meticulosamente, y por esto somos
+                considerados como la más confiable en la industria.
+                Brindamos soluciones integrales, acompañando al cliente en
+                todo el proceso de producción para que obtenga un producto
+                de calidad y duradero.
+                Hemos trabajado con las mejores marcas, muchas de las
+                cuales hoy nos siguen eligiendo y sobre todo, y aún más
+                importante, recomendando.</p>        
         </section>
 
         <section class="main__servicios">
@@ -137,11 +134,11 @@
                 <h4>Impresiones</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum ab officia assumenda at. Fugiat, corrupti.</p>
             </div>
-            <img src="./media/galeria2.png" alt="" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="main__servicios_imagen2 img">
             <div class="main__servicios_desc2">                    
                 <h4>Calcos</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate fuga ex distinctio nemo, molestiae eveniet mollitia autem corrupti rerum quae at?</p>
             </div>            
+            <img src="./media/galeria2.png" alt="" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="main__servicios_imagen2 img">
             <img src="./media/galeria3.png" alt="" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="main__servicios_imagen3 img">
             <div class="main__servicios_desc3">                    
                 <h4>Estampados</h4>

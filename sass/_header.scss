@@ -9,16 +9,16 @@
     &__logo {
         grid-area: 1/1/2/2;
         & img{
-            width: 85px;
+            @include prop_img(85px, auto, 0px)
         }
     }
     &__nombre {
         & h1{
-        @include prop_nombre($font-color-h1, $font-h1, $size-h1, normal);        
+        @include prop_text($font-color-h1, $font-h1, $size-h1, normal);        
         text-shadow: $sombra-h1;
         }
         & h2{
-        @include prop_nombre($font-color-h2, $font-h2, $size-h2,italic);
+        @include prop_text($font-color-h2, $font-h2, $size-h2,italic);
         margin-top: -20px;
         line-height: 0.8rem;
         text-shadow: $sombra-h2;
@@ -28,13 +28,20 @@
         display: flex;
         justify-content: space-around;
         & img{
-            width: 65px;
-            border:none;
+            @include prop_img(70px, auto, 0px)            
         }
-        & button {
+        &__btn{
             border: none;
             background: none;
         }
+        &__btn-primario{
+            @include boton($color-1, 20px);
+            &:hover{
+                background-color: $font-color-nav;
+                color: $color-1;
+            }
+        }
+
     }
     &__nav{
         grid-area: 2/1/3/4;
@@ -46,21 +53,21 @@
             margin: 0px 20px;
         }
         &__a{
-            @include prop_nombre($font-color-h2, $font-h3, $size-p, normal);
+            @include prop_text($font-color-h2, $font-h3, $size-p, normal);
             &:hover{
-                @include prop_nombre($font-color-h2, $font-h2, $size-h2,italic);
+                @include prop_text($font-color-h2, $font-h2, $size-h2,italic);
                 margin-top: -15px;
                 line-height: 0.8rem;
                 text-shadow: $sombra-h2;                
-                color: #00ebff;                
+                color: $font-color-nav;                
                 transition: all 1s;
             }
         }
         &__a--active{            
-            @include prop_nombre($font-color-h2, $font-h2, $size-h2,italic);
+            @include prop_text($font-color-h2, $font-h2, $size-h2,italic);
                 margin: -30px;                
                 text-shadow: $sombra-h2;  
-                color: #00ebff;
+                color: $font-color-nav;
                 &:hover{
                     @extend .header__nav__a--active;
                 }

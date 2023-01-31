@@ -1,0 +1,29 @@
+/*Estilos Main*/
+.main{
+    background-color: #e5e5f7;    
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    padding-bottom: 10px;
+    & h3{
+        @include prop_text($font-color-h3, $font-color-h3, $size-h3, italic)
+    }
+    & p{
+        @include prop_text ($font-color-p, $font-p, $size-p, normal);
+        font-weight: normal;
+    }
+    & h4{
+        @include prop_text ($font-color-h4, $font-h4, $size-h4, normal);
+        text-decoration: underline;
+    }
+    &__presentacion{
+        padding-bottom: 10rem;
+    }
+    &__servicios{
+        @include grid(grid, repeat(2, auto), repeat(3,auto), 3rem, 2rem, center);
+        & img{
+            @include prop_img(100%, auto, 20px)
+        }
+    }
+    
+}

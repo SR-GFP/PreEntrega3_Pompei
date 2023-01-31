@@ -1,3 +1,5 @@
+@import "./variables";
+
 @mixin disp-dir-alig($display, $direccion, $alineado){
     display: $display;
     flex-direction: $direccion;
@@ -5,10 +7,30 @@
     align-items: $alineado;
 }
 
-@mixin prop_nombre($color, $font, $size, $style){
+@mixin prop_text($color, $font, $size, $style){
     color:$color;
     font-family: $font;
     font-size: $size;
     font-style: $style;
 }
 
+@mixin grid($display, $grid-colums, $grid-rows, $column-gap, $row-gap, $aling){
+    display: $display;
+    grid-template-columns: $grid-colums;
+    grid-template-rows: $grid-rows;    
+    column-gap: $column-gap;
+    row-gap: $row-gap;
+    align-items: $aling;
+}
+
+@mixin prop_img ($ancho, $alto, $borde){
+    width: $ancho;
+    height:$alto;
+    border-radius:$borde;
+}
+
+@mixin boton($bg-color, $borde){
+    @include prop_text($font-color-nav, $font-h2, $size-p, italic);
+    background-color: $bg-color;
+    border-radius: $borde;
+}

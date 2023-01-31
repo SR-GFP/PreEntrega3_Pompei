@@ -3,8 +3,8 @@
 $size-h1: 7rem;
 $size-h2: 6rem;
 $size-h3: 4rem;
-$size-h4: 3rem;
-$size-p: 2.5rem;
+$size-h4: 2.5rem;
+$size-p: 2rem;
 
 $p-main: 2% 10%;
 
@@ -18,13 +18,16 @@ $color-4: #D9B4A5;
 $font-h1:'Aclonica', sans-serif;
 $font-h2: 'Euphoria Script', cursive;
 $font-h3:'Righteous', cursive;
+$font-h4:'Righteous', cursive;
 $font-p: 'Montserrat', sans-serif;
 
 /*Color de fuente*/
 $font-color-h1: #c30808;
 $font-color-h2: #ffffff;
-/*$font-color-h1:
-$font-color-h1:*/
+$font-color-h3: black;
+$font-color-h4: black;
+$font-color-p: black;
+$font-color-nav:#00ebff;
 
 /*variables sombras*/
 $sombra-h1: 3px 0px 0px #090808, 11px -4px 19px #06dbee;
