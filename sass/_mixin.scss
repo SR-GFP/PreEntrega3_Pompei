@@ -34,3 +34,9 @@
     background-color: $bg-color;
     border-radius: $borde;
 }
+
+@mixin flex($display, $wrap, $justify){
+    display: $display;
+    flex-wrap: $wrap;
+    justify-content: $justify;    
+}
