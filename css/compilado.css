@@ -32,7 +32,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: auto auto;
-  background-color: #9098DA;
+  background-color: #4d4a4aeb;
   align-items: center; }
   .header__logo {
     grid-area: 1/1/2/2; }
@@ -53,6 +53,12 @@ main {
     line-height: 0.8rem;
     text-shadow: -3px 0px 0px #191010; }
   .header__user {
-    display: flex; }
+    display: flex;
+    justify-content: space-around; }
+    .header__user img {
+      width: 65px; }
+    .header__user button {
+      border: none;
+      background: none; }
 
 /*condicionales*/

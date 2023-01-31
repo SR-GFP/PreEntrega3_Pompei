@@ -26,5 +26,13 @@
     }
     &__user{
         display: flex;
+        justify-content: space-around;
+        & img{
+            width: 65px;
+        }
+        & button {
+            border: none;
+            background: none;
+        }
     }
 }
