@@ -9,7 +9,7 @@ $size-p: 2.5rem;
 $p-main: 2% 10%;
 
 /*Colores de la pagina*/
-$color-1: #4d4a4aeb;
+$color-1: #5a5454e3;
 $color-2: #4F558C;
 $color-3: #6A8C56;
 $color-4: #D9B4A5;
@@ -29,3 +29,6 @@ $font-color-h1:*/
 /*variables sombras*/
 $sombra-h1: 3px 0px 0px #090808, 11px -4px 19px #06dbee;
 $sombra-h2: -3px 0px 0px #191010;
+
+/*Gadiente*/
+$gradiente-CMYK: linear-gradient(to Right, rgba(0,0,0,1) 0%, rgba(255,255,0,0.72) 35%, rgba(255,0,255,0.48) 70%, rgba(0,255,255,0.23) 100%);

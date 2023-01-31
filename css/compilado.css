@@ -13,6 +13,7 @@
 /*$font-color-h1:
 $font-color-h1:*/
 /*variables sombras*/
+/*Gadiente*/
 /*Estilos Generales*/
 html {
   font-size: 62.5%;
@@ -32,7 +33,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: auto auto;
-  background-color: #4d4a4aeb;
+  background-color: #5a5454e3;
   align-items: center; }
   .header__logo {
     grid-area: 1/1/2/2; }
@@ -56,9 +57,41 @@ main {
     display: flex;
     justify-content: space-around; }
     .header__user img {
-      width: 65px; }
+      width: 65px;
+      border: none; }
     .header__user button {
       border: none;
       background: none; }
+  .header__nav {
+    grid-area: 2/1/3/4;
+    background-color: black;
+    color: white;
+    border-radius: 100px 0px 100px 0px;
+    align-items: center; }
+    .header__nav__li {
+      margin: 0px 20px; }
+    .header__nav__a {
+      color: #ffffff;
+      font-family: "Righteous", cursive;
+      font-size: 2.5rem;
+      font-style: normal; }
+      .header__nav__a:hover {
+        color: #ffffff;
+        font-family: "Euphoria Script", cursive;
+        font-size: 6rem;
+        font-style: italic;
+        margin-top: -15px;
+        line-height: 0.8rem;
+        text-shadow: -3px 0px 0px #191010;
+        color: #00ebff;
+        transition: all 1s; }
+    .header__nav__a--active, .header__nav__a--active:hover {
+      color: #ffffff;
+      font-family: "Euphoria Script", cursive;
+      font-size: 6rem;
+      font-style: italic;
+      margin: -30px;
+      text-shadow: -3px 0px 0px #191010;
+      color: #00ebff; }
 
 /*condicionales*/
