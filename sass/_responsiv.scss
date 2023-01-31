@@ -1,0 +1,113 @@
+@import "./mixin";
+/*Responisve*/
+@media screen and (max-width: 1024px){
+    .main__barra img{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 768px){  
+    .header{
+        background-color: $color-3;        
+        display: flex;
+        flex-direction: column;
+        &__logo img{
+            display: flex;
+        }
+        &__user{
+            display: none;
+        }
+        &__nav{
+            background-color: transparent;
+            margin-top: 2rem;
+            &__btn-menu{
+                font-size: 2rem;
+            }
+            &__a{
+                font-size: $size-p/2;
+            }
+            &__a--active{
+                font-size: $size-h2/2;
+                margin: 2px;
+                padding: 0px;
+            }
+            }
+        }
+        .main{
+            &__servicios{
+                @include grid(grid, 1, 6, 2rem, 0rem, center);
+            }
+            &__barra img{
+                width: 100px;
+            }        
+            &__barra__columnas{
+                flex-direction: column;
+                width: 49.99999%;
+                margin: 10px 0px;
+                justify-content: center;
+            }
+        }
+    }
+
+
+@media screen and (max-width: 480px) {
+    .header{      
+        &__nombre h1{
+            font-size: $size-h1 - 2rem;
+        }
+        &__nombre h2{
+            font-size: $size-h2 - 2rem;
+            margin-top: 0.5rem;
+        }
+    }
+    .main__servicios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    }
+    .main__barra{
+        flex-direction: column;
+        align-content: center;
+    }
+    .img{
+        width: 90%;
+    }
+    .footer__datos{
+        flex-direction: column;
+    }
+    .footer__datos__iconos{
+        margin: 10px 0px;
+    }
+}
+@media screen and (max-width: 320px) {    
+    .header{      
+        &__nombre h1{
+            font-size: $size-h1 - 3rem;
+        }
+        &__nombre h2{
+            font-size: $size-h2 - 3rem;
+            margin-top: 0.5rem;
+        }
+    }
+    
+    h3{
+        font-size: 3rem;
+    }
+    .main__servicios{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    .img{
+        width: 80%;
+    }
+    .footer p{
+        font-size: 1rem;
+        flex-direction: column;
+    }
+}
+    

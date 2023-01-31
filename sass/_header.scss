@@ -71,6 +71,9 @@
                 &:hover{
                     @extend .header__nav__a--active;
                 }
+        }        
+        &__icono{
+            background-color: $color-4;            
         }
     }
 }
