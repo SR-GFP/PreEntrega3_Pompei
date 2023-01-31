@@ -34,25 +34,6 @@
         background-color: black;
         &  p{
             @include prop_text ($font-color-h2, $font-p, $size-p, normal);            
-            animation-name: focus-in-contract;
-            animation-duration: 3.2s;
-            animation-timing-function: ease;
-            animation-delay: 0s;
-            animation-iteration-count: 1;
-            animation-direction: normal;
-            animation-fill-mode: none;
-            
-            @keyframes focus-in-contract {
-                0% {
-                    letter-spacing:1em;
-                    filter:blur(12px);
-                    opacity:0;
-                }
-                100% {
-                    filter:blur(0);
-                    opacity:1;
-                }
-            }
         }
         & img {
             @include prop_img(200px, auto, none);
