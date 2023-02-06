@@ -267,6 +267,8 @@ body {
     .header__user {
       display: none; }
     .header__nav {
+      display: flex;
+      justify-content: center;
       background-color: transparent;
       margin-top: 2rem; }
       .header__nav__btn-menu {
