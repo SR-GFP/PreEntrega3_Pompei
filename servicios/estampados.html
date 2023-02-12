@@ -114,8 +114,8 @@
 
     <!-- inicio del main -->
     <main class="main">
-        <section class="main__presentacion">
-            <div class="padding__main">
+        <section class="main__sublimacion">
+            <div class="main__presentacion">
                 <h3>Sublimacion</h3>            
                 <p>La sublimación digital textil es un proceso que consiste en transferir un diseño a una tela a través de la aplicación 
                     De esta manera los colores se ven mucho más vívos, y el diseño resiste a los lavados por mucho más tiempo.
@@ -124,16 +124,55 @@
                     Poseemos equipos de ultima generación con una capacidad de producción de 2000 mts diarios.
                 </p>
             </div>            
-            <div class="main__galeria">
-                <img class="img" src="../media/sublimados1.png" alt="Plotter Sublimacion">
-                <img class="img" src="../media/sublimados2.png" alt="Articulos Sublimados">
-                <img class="img" src="../media/sublimados3.png" alt="">
+            <div class="main__galeria container-fluid">
+                <div class="row main__galeria__fila">
+                    <div class="col-md-4 ">
+                        <img class="img" src="../media/sublimados2.png" alt="Articulos Sublimados">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img" src="../media/sublimados1.png" alt="Plotter Sublimacion">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img" src="../media/sublimados3.png" alt="Ploter de impresion de rollos para Sublimacion">
+                    </div>                    
+                </div>
             </div>
+            <!-- carrusel para vistas en moviles -->
+        <div class="container main__carrusel__container">
+            <div class="row">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>                        
+                    </div>                    
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active ">
+                            <img src="../media/sublimados1.png" class="d-block w-100 main__carrusel__img" alt="plancha de etiquetas varias">                            
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/sublimados2.png" class="d-block w-100 main__carrusel__img" alt="plancha de etiquetas varias">                            
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/sublimados3.png" class="d-block w-100 main__carrusel__img" alt="plancha de etiquetas varias">                            
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>            
+            </div>
+        </div>
         </section>
         <hr class="separador" data-aos="fade-right" data-aos-duration="1200">
 
         <section class="main__presentacion dtg">
-            <div class="mian__DTG">
+            <div class="main__DTG">
                 <h3>DTG</h3>
                 <h4>Impresión directa, de alto rendimiento y confiable</h4>
                 <p>
@@ -143,14 +182,50 @@
                     Con un sistema de desgasificación permite que la estampa sobre la tela no sea rígida y tenga una flexibilidad optima, a su vez las tintas utilizadas cumple con todas las normas y certificados  para ropa infantil y en general.
                 </p>
             </div>            
-            <div class="main__galeria">
-                <img class="img" src="../media/dtg.png" alt="">
-                <img class="img" src="../media/dtg1.png" alt="">
-                <img class="img" src="../media/dtg2.png" alt="">
+            <div class="main__galeria container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img" src="../media/dtg.png" alt="Estampado directo a prenda">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img" src="../media/dtg1.png" alt="Impresoras directas a textil">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img" src="../media/dtg2.png" alt="Impresoras directas a textil">
+                    </div>
+                </div>
             </div>
-        </section>
+            <!-- carrusel para vistas en moviles -->            
+            <div class="container main__carrusel__container">
+                <div class="row">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>                        
+                        </div>                    
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active ">
+                                <img src="../media/dtg.png" class="d-block w-100 main__carrusel__img" alt="plancha de etiquetas varias">                            
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/dtg1.png" class="d-block w-100 main__carrusel__img" alt="plancha de etiquetas varias">                            
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/dtg2.png" class="d-block w-100 main__carrusel__img" alt="plancha de etiquetas varias">                            
+                            </div>
+                        </div>                    
+                    </div>            
+                </div>
+            </div>
+            <div class="container-fluid main__container__video">
+                <div class="row">
+                    <iframe width="956" height="538" src="https://www.youtube.com/embed/1g6xKhHnSuQ" title="Impresión DTG - Quick Color Press (Argentina) con Epson F2100" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                </div>
+            </div>
+        </section>        
         <hr class="separador" data-aos="fade-right" data-aos-duration="1200">
-        
     </main>
     
     <!-- Inicio del Footer -->

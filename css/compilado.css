@@ -160,17 +160,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
+    .main__galeria__fila {
+      margin: 0px 10px; }
     .main__galeria img {
       border-radius: 20px;
       margin: 5px;
-      width: 80%; }
+      width: 100%;
+      height: 100%; }
   .main__carrusel__container {
     display: none; }
-  .main__carrusel__descripcion h5 {
-    color: black;
-    font-size: 4rem;
-    background-color: rgba(128, 128, 128, 0.51);
-    font-family: "Righteous", cursive; }
   .main__servicios {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -217,6 +215,8 @@ body {
       flex-wrap: nowrap;
       justify-content: center;
       align-items: center; }
+  .main__container__video {
+    margin: 10px; }
 
 /*Estilos del footer*/
 .footer {

@@ -23,22 +23,19 @@
     }
     &__galeria{
         @include flex(flex,wrap,center);
+        &__fila{
+            margin: 0px 10px;
+        }
         & img{
             border-radius: 20px;
             margin: 5px;
-            width: 80%;
+            width: 100%;
+            height: 100%;
         }        
     }
     &__carrusel{
         &__container{        
             display: none;
-        }            
-        &__descripcion h5{
-            color: black;
-            font-size: $size-h3;
-            background-color: rgba(128, 128, 128, 0.51);
-            font-family: $font-h3
-            
         }
     }
     
@@ -86,5 +83,8 @@
             @include flex(flex, nowrap, center);
             align-items: center;            
         }
+    }
+    &__container__video{
+        margin: 10px;
     }
 }
