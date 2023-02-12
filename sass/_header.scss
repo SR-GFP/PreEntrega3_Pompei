@@ -1,6 +1,6 @@
 @import "./mixin";
 /*Estilos del Header*/
-.header {
+.header {    
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto auto;    
@@ -19,6 +19,7 @@
         }
         & h2{
         @include prop_text($font-color-h2, $font-h2, $size-h2,italic);
+        position: relative;
         margin-top: -20px;
         line-height: 0.8rem;
         text-shadow: $sombra-h2;
@@ -43,7 +44,7 @@
         }
 
     }
-    &__nav{
+    &__nav{        
         grid-area: 2/1/3/4;
         background-color: black;
         color: white;

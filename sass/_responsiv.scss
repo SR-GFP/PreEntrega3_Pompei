@@ -35,7 +35,7 @@
                 font-size: 2rem;
             }
             &__a{
-                font-size: $size-p/2;
+                font-size: $size-nav/2;
             }
             &__a--active{
                 font-size: $size-h2/2;
@@ -55,8 +55,14 @@
                 margin: 10px 0px;
                 justify-content: center;               
             }
+            &__galeria{
+                display: none;
+            }
             &__galeria img{
                 width: 70%;
+            }
+            &__carrusel__container{
+                display: block;
             }
         }
     }

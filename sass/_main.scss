@@ -25,9 +25,23 @@
         @include flex(flex,wrap,center);
         & img{
             border-radius: 20px;
-            margin: 1rem;
+            margin: 5px;
+            width: 80%;
         }        
     }
+    &__carrusel{
+        &__container{        
+            display: none;
+        }            
+        &__descripcion h5{
+            color: black;
+            font-size: $size-h3;
+            background-color: rgba(128, 128, 128, 0.51);
+            font-family: $font-h3
+            
+        }
+    }
+    
     &__servicios{
         @include grid(grid, repeat(2, auto), repeat(3,auto), 3rem, 2rem, center);
         margin: $m-main;

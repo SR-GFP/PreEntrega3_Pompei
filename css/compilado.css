@@ -71,6 +71,7 @@ body {
     font-family: "Euphoria Script", cursive;
     font-size: 6rem;
     font-style: italic;
+    position: relative;
     margin-top: -20px;
     line-height: 0.8rem;
     text-shadow: -3px 0px 0px #191010; }
@@ -161,7 +162,15 @@ body {
     justify-content: center; }
     .main__galeria img {
       border-radius: 20px;
-      margin: 1rem; }
+      margin: 5px;
+      width: 80%; }
+  .main__carrusel__container {
+    display: none; }
+  .main__carrusel__descripcion h5 {
+    color: black;
+    font-size: 4rem;
+    background-color: rgba(128, 128, 128, 0.51);
+    font-family: "Righteous", cursive; }
   .main__servicios {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -277,7 +286,7 @@ body {
       .header__nav__btn-menu {
         font-size: 2rem; }
       .header__nav__a {
-        font-size: 1rem; }
+        font-size: 1.5rem; }
       .header__nav__a--active, .header__nav__a--active:hover {
         font-size: 3rem;
         margin: 2px;
@@ -295,8 +304,12 @@ body {
     width: 49.99999%;
     margin: 10px 0px;
     justify-content: center; }
+  .main__galeria {
+    display: none; }
   .main__galeria img {
-    width: 70%; } }
+    width: 70%; }
+  .main__carrusel__container {
+    display: block; } }
 
 @media screen and (max-width: 480px) {
   .header__nombre h1 {
