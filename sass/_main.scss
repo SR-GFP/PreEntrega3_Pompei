@@ -25,6 +25,7 @@
         @include flex(flex,wrap,center);
         & img{
             border-radius: 20px;
+            margin: 1rem;
         }        
     }
     &__servicios{

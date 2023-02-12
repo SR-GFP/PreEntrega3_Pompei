@@ -55,17 +55,16 @@
         &__a{
             @include prop_text($font-color-h2, $font-h3, $size-p, normal);
             &:hover{
-                @include prop_text($font-color-h2, $font-h2, $size-h2,italic);
-                margin-top: -15px;
-                line-height: 2.8rem;
+                @include prop_text($font-color-h3, $font-h3, $size-h3,italic);
+                margin-top: -25px;                
                 text-shadow: $sombra-h2;                
                 color: $font-color-nav;                
                 transition: all 1s;
             }
         }
         &__a--active{            
-            @include prop_text($font-color-h2, $font-h2, $size-h2,italic);
-                margin: -30px;                
+            @include prop_text($font-color-h2, $font-h3, $size-nav,italic);
+                margin: -10px;                
                 text-shadow: $sombra-h2;  
                 color: $font-color-nav;
                 &:hover{
