@@ -111,47 +111,37 @@
     
     <!-- inicio del main -->
     <main class="main">
-        <h3>Contactanos</h3>
-        <div class="formulario__contenedor">
-            <fieldset class="main__fieldset">
-                <legend>Info Personal:</legend>
-                <div>
-                    <label for="sexo">Sexo</label>
-                    <input type="radio" name="sexo" value="Mujer" required>
-                    <label for="Mujer">Mujer</label>
-                    <input type="radio" name="sexo" value="Hombre" > 
-                    <label for="Hombre">Hombre</label>
+        <section class="main__contactanos container-fluid">
+            <div class="row main__contacto__fila">
+                <div class="col-md-6">
+                    <div class="formulario__contenedor">
+                        <fieldset class="main__fieldset">                            
+                            <legend>
+                                <h3>Contactanos</h3>
+                            </legend>                            
+                            <div>
+                                <input class="imput-form" type="text" id="nombre" name="nombre" value="" placeholder="Nombre y Apellido">
+                            </div>                            
+                            <div>
+                                <input class="imput-form" type="email" name="mail" id="mail" value="" placeholder="Mail">
+                            </div>
+                            <div>
+                                <input class="imput-form" type="tel" name="tel" id="tel" value="" placeholder="Telefono">
+                            </div>
+                            <div>
+                                <textarea class="imput-msj" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
+                            </div>                            
+                            <div>
+                                <input class="imput-submit header__user__btn-primario" type="submit" name="Enviar" value="Enviar" >
+                            </div>                            
+                        </fieldset>
+                    </div>
                 </div>
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    
-                    <input type="text" id="nombre" name="nombre" value="" placeholder="Nombre">
+                <div class="col-md-6">
+                    <iframe class="main__ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.080677306611!2d-58.37610838481385!3d-34.60212138046004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaccfaa236bd%3A0x7ba6d630d36187c2!2sLavalle%20%26%20San%20Mart%C3%ADn%2C%20C1054%20CABA!5e0!3m2!1ses-419!2sar!4v1676241503810!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" value="" placeholder="Apellido">
-                </div>
-                <div>
-                    <label for="mail">Mail</label>
-                    <input type="email" name="mail" id="mail" value="" placeholder="Mail">
-                </div>
-                <div>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
-                </div>
-                <div>
-                    <label for="talle">Talle:</label>
-                    <select>
-                        <option value="XL">Extra Large</option>
-                        <option value="L">Large</option>
-                        <option value="M">Medium</option>
-                        <option value="S">Small</option>
-                    </select>
-                </div>
-                <div>
-                    <input type="submit" name="Enviar" value="Enviar">
-                </div>
-            </fieldset>
-        </div>
+            </div>
+        </section>
         <hr class="separador" data-aos="fade-right" data-aos-duration="1200">
     </main>
     

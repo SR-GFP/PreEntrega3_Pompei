@@ -33,6 +33,33 @@ body {
   background-color: fuchsia;
   margin: 2rem 0rem; }
 
+.imput-form, .imput-msj {
+  border-radius: 20px;
+  background-color: #5a54549e;
+  color: #000000;
+  height: 38px;
+  width: 95%;
+  margin: 2px;
+  border: 2px solid #5a5454e3;
+  font-size: 2rem;
+  padding: 4px; }
+  .imput-form::placeholder, .imput-msj::placeholder {
+    padding-left: 18px;
+    color: #000000;
+    font-size: 2rem; }
+
+.imput-msj {
+  height: 150px; }
+
+.imput-submit {
+  background-color: #00ebff;
+  color: black;
+  font-size: 3rem;
+  border-radius: 10px;
+  width: 15rem; }
+  .imput-submit::placeholder {
+    font-family: "Righteous", cursive; }
+
 /*Variables*/
 /*tamaño de fuentes*/
 /*Colores de la pagina*/
@@ -88,7 +115,7 @@ body {
     .header__user__btn-primario {
       color: #00ebff;
       font-family: "Euphoria Script", cursive;
-      font-size: 2rem;
+      font-size: 3rem;
       font-style: italic;
       background-color: #5a5454e3;
       border-radius: 20px; }
@@ -217,6 +244,12 @@ body {
       align-items: center; }
   .main__container__video {
     margin: 10px; }
+  .main__contacto__fila {
+    padding: 20px; }
+  .main__ubicacion {
+    padding: 20px 0px;
+    width: 100%;
+    height: 100%; }
 
 /*Estilos del footer*/
 .footer {

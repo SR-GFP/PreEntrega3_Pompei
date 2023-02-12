@@ -12,3 +12,34 @@ body{
     background-color: fuchsia;
     margin: 2rem 0rem;
 }
+.imput-form{
+    border-radius: 20px;
+    background-color: #5a54549e;
+    color: $color-3;
+    height: 38px;
+    width: 95%;
+    margin: 2px;
+    border: 2px solid $color-1;
+    font-size: $size-p;
+    padding: 4px;
+    &::placeholder{
+        padding-left: 18px;
+        color: $color-3;
+        font-size: $size-p;
+    }    
+}
+.imput-msj{
+    @extend .imput-form;
+    height: 150px;
+}
+.imput-submit{
+    background-color: $color-4;
+    color: black;
+    font-size: $size-nav;
+    border-radius: 10px;
+    width: 15rem;
+    &::placeholder{
+        font-family: $font-h3;
+
+    }
+}

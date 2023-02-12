@@ -30,8 +30,9 @@
 }
 
 @mixin boton($bg-color, $borde){
-    @include prop_text($font-color-nav, $font-h2, $size-p, italic);
+    @include prop_text($font-color-nav, $font-h2, $size-nav, italic);
     background-color: $bg-color;
+
     border-radius: $borde;
 }
 
