@@ -24,9 +24,8 @@
     &__galeria{
         @include flex(flex,wrap,center);
         & img{
-            @include prop_img (auto, auto, 2rem);
-            margin: 1rem 2rem;
-        }
+            border-radius: 20px;
+        }        
     }
     &__servicios{
         @include grid(grid, repeat(2, auto), repeat(3,auto), 3rem, 2rem, center);
@@ -69,8 +68,8 @@
             margin: 1rem;
         }
         &__columnas{
-            @include flex(flex, wrap, center);
-            align-items: center;
+            @include flex(flex, nowrap, center);
+            align-items: center;            
         }
     }
 }

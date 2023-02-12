@@ -57,7 +57,7 @@
             &:hover{
                 @include prop_text($font-color-h2, $font-h2, $size-h2,italic);
                 margin-top: -15px;
-                line-height: 0.8rem;
+                line-height: 2.8rem;
                 text-shadow: $sombra-h2;                
                 color: $font-color-nav;                
                 transition: all 1s;

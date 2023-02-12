@@ -1,9 +1,13 @@
 @import "./mixin";
 /*Responisve*/
 @media screen and (max-width: 1024px){
-    .main__barra img{
-        width: 150px;
+    .main__barra__columnas {
+        flex-wrap: wrap;
+                
     }
+    .main__barra img{
+        width: 150px;       
+    }   
 }
 @media screen and (max-width: 768px){  
     .header{
@@ -21,6 +25,12 @@
             justify-content: center;
             background-color: transparent;
             margin-top: 2rem;
+            &__ul {
+                align-items: center;
+            }
+            &__li{
+                font-size: $size-h3;
+            }
             &__btn-menu{
                 font-size: 2rem;
             }
@@ -39,13 +49,11 @@
                 @include grid(grid, 1, 6, 2rem, 0rem, center);
             }            
             &__barra__columnas{
+                flex-wrap: wrap;
                 flex-direction: column;
                 width: 49.99999%;
                 margin: 10px 0px;
-                justify-content: center;
-                & img{
-                    width: 70%;
-                }
+                justify-content: center;               
             }
             &__galeria img{
                 width: 70%;
@@ -98,12 +106,23 @@
     h3{
         font-size: 3rem;
     }
-    .main__servicios{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-    }
+    .main{
+        &__servicios{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;        
+            }
+            &__barra__columnas{
+                flex-direction: column;
+                width: 49.99999%;
+                margin: 10px 0px;
+                justify-content: center;
+                & img{
+                    width: 70%;
+                }
+            }
+        }
     p{
         font-size: 1.5rem;
     }
